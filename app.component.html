@@ -1,16 +1,16 @@
 <div class="container">
-    <button class="btn btn-primary">fhhfh</button>
+    <button class="btn btn-primary">{{'checker'| translate}}</button>
     <app-cockpit (serverCreated)="onServerAdded($event)" (blueprintCreated)="onBlueprintAdded($event)">
         
     </app-cockpit>
     <br>
     <div class="row">
         <div class="col-xs-12">
-            <button class="btn btn-primary " (click)="onChangeFirst()">change first element </button>
+            <button class="btn btn-primary " (click)="onChangeFirst()">{{'common.form'| translate}} </button>
             &nbsp;
             <br>
             <br>
-            <button class="btn btn-danger" (click)="ondestroy()" > Delete first element </button>
+            <button class="btn btn-danger" (click)="ondestroy()" > {{'common.form222'| translate}} </button>
             <app-server-element *ngFor="let serverElement of serverELements" [srvEle]="serverElement"
             [name]="serverElement.name">
             <br>
@@ -27,4 +27,4 @@
 </div>
 
 
-<h1>welcome iam testing the site </h1>
+<h1>{{'common.form'| translate}} </h1>
