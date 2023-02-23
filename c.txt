@@ -30,3 +30,5 @@ checking git hub
 
 hey 
 any update regarding issue facing by @e
+
+checking update through fetching 
